@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail API</title>
+    <link rel="icon" href="/static/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Cocktail API 🍹</h1>
+      <p>
+        This is a simple API that provides information about cocktails. You can
+        find all the cocktails, a cocktail by ID, a random cocktail, alcohol
+        types, and cocktails by tag.
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://cocktail-api-fastapi.vercel.app/cocktails"
+            target="_blank"
+            >All Cocktails</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cocktail-api-fastapi.vercel.app/cocktails/13"
+            target="_blank"
+            >Cocktail by ID
+            (https://cocktail-api-fastapi.vercel.app/cocktails/{cocktail_id})</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cocktail-api-fastapi.vercel.app/cocktails/random"
+            target="_blank"
+            >Random Cocktail</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cocktail-api-fastapi.vercel.app/alcohol"
+            target="_blank"
+            >Alcohol types</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cocktail-api-fastapi.vercel.app/tags/dark-rum"
+            target="_blank"
+            >Cocktail by tag
+            (https://cocktail-api-fastapi.vercel.app/tags/{tag})</a
+          >
+        </li>
+        <li>
+          <a href="https://cocktail-api-fastapi.vercel.app/docs" target="_blank"
+            >Swagger</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://cocktail-api-fastapi.vercel.app/redoc"
+            target="_blank"
+            >ReDoc API Documentation</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
